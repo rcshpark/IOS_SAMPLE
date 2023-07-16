@@ -19,6 +19,7 @@
 		7E03C7232A641CE400356BAF /* ContentCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C7222A641CE400356BAF /* ContentCollectionViewHeader.swift */; };
 		7E03C7252A64382900356BAF /* ContentCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C7242A64382900356BAF /* ContentCollectionViewRankCell.swift */; };
 		7E03C7272A643DC000356BAF /* ContentCollectionViewMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C7262A643DC000356BAF /* ContentCollectionViewMainCell.swift */; };
+		7E03C7292A6447DC00356BAF /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C7282A6447DC00356BAF /* UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		7E03C7222A641CE400356BAF /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
 		7E03C7242A64382900356BAF /* ContentCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewRankCell.swift; sourceTree = "<group>"; };
 		7E03C7262A643DC000356BAF /* ContentCollectionViewMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewMainCell.swift; sourceTree = "<group>"; };
+		7E03C7282A6447DC00356BAF /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				7E03C71E2A64148200356BAF /* Content.swift */,
 				7E03C7172A640F3000356BAF /* HomeViewController.swift */,
 				7E03C7262A643DC000356BAF /* ContentCollectionViewMainCell.swift */,
+				7E03C7282A6447DC00356BAF /* UIButton.swift */,
 				7E03C7222A641CE400356BAF /* ContentCollectionViewHeader.swift */,
 				7E03C7202A64193800356BAF /* ContentCollectionViewCell.swift */,
 				7E03C7242A64382900356BAF /* ContentCollectionViewRankCell.swift */,
@@ -169,6 +172,7 @@
 				7E03C7272A643DC000356BAF /* ContentCollectionViewMainCell.swift in Sources */,
 				7E03C71F2A64148200356BAF /* Content.swift in Sources */,
 				7E03C7212A64193800356BAF /* ContentCollectionViewCell.swift in Sources */,
+				7E03C7292A6447DC00356BAF /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

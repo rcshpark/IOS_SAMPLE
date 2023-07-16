@@ -61,6 +61,7 @@ class ContentCollectionViewMainCell: UICollectionViewCell{
         
         contentStackVIew.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().inset(30)
+            $0.height.equalTo(60)
     }
     
     menuStackView.axis = .horizontal
@@ -77,16 +78,18 @@ class ContentCollectionViewMainCell: UICollectionViewCell{
     }
         
         [plusButton,infoButton].forEach{
+            
             $0.titleLabel?.font = .systemFont(ofSize: 13)
             $0.setTitleColor(.white, for: .normal)
             $0.imageView?.tintColor = .white
+            $0.adjustVerticalLayout(5)
         }
         
         plusButton.setTitle("내가 찜한 콘텐츠", for: .normal)
         plusButton.setImage(UIImage(systemName: "plus"), for: .normal)
         plusButton.addTarget(self, action: #selector(plusButtonTapped), for: .touchUpInside)
         
-        infoButton.setTitle("내가 찜한 콘텐츠", for: .normal)
+        infoButton.setTitle("정보", for: .normal)
         infoButton.setImage(UIImage(systemName: "info.circle"), for: .normal)
         infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
         
@@ -98,8 +101,7 @@ class ContentCollectionViewMainCell: UICollectionViewCell{
             $0.width.equalTo(90)
             $0.height.equalTo(30)
         }
-        playButton.addTarget(self, action: #selector(playButtonTapped), for: .touchUpInside)
-    
+      
     tvButton.setTitle("TV 프로그램", for: .normal)
     movieButton.setTitle("영화", for: .normal)
     categoryButton.setTitle("카테고리", for: .normal)
@@ -108,6 +110,10 @@ class ContentCollectionViewMainCell: UICollectionViewCell{
     movieButton.addTarget(self, action: #selector(movieButtonTapped), for: .touchUpInside)
     categoryButton.addTarget(self, action: #selector(categoryButtonTapped), for: .touchUpInside)
     
+        playButton.addTarget(self, action: #selector(playButtonTapped), for: .touchUpInside)
+        [plusButton,playButton,infoButton].forEach{
+            contentStackVIew.addArrangedSubview($0)
+        }
     menuStackView.snp.makeConstraints{
         $0.top.equalTo(baseStackView)
         $0.leading.trailing.equalToSuperview().inset(30)
